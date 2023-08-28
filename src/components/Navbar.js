@@ -1,8 +1,10 @@
 
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { navLinks } from "./navData";
 import { AiOutlineMenuUnfold, AiOutlineMenuFold } from "react-icons/ai";
+
+import logowop from '../assests/logowop.png';
 
 
 const Navbar = () => {
@@ -30,9 +32,9 @@ const Navbar = () => {
             <div>
               <span className="px-2 mr-2 md:border-r border-gray-800">
                 <img
-                  src="https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png"
+                src={logowop}
                   alt="alt placeholder"
-                  className="w-8 h-8 -mt-1 inline mx-auto"
+                  className="w-12 h-12 -mt-1 inline mx-auto"
                 />
               </span>
             </div>
@@ -44,7 +46,7 @@ const Navbar = () => {
                   <a
                     id={id}
                     className={`px-2 py-1 flex items-center cursor-pointer hover:bg-gray-200 hover:text-gray-700 text-sm rounded ${
-                      window.location.pathname == link
+                      window.location.pathname === link
                         ? "text-gray-700 font-semibold"
                         : ""
                     }`}
@@ -98,7 +100,7 @@ const Navbar = () => {
                   <a
                     id={id}
                     className={` flex items-center py-4 cursor-pointer bg-green-300   text-sm  ${
-                      window.location.pathname == link
+                      window.location.pathname === link
                         ? "text-gray-700 font-semibold"
                         : ""
                     }`}

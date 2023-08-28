@@ -57,6 +57,6 @@ module.exports = {
     },
   },
   plugins: [
-    require('taos/plugin')
+    
   ],
 }

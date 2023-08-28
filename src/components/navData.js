@@ -32,11 +32,6 @@ export const navLinks = [
    
 },
 {
-  title: "Past Convenor",
-  link: "/past-convenor",
- 
-},
-{
   title: "Office Bearers",
   link: "/off-be",
  
