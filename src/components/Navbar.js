@@ -1,7 +1,10 @@
 
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+
+
 import { navLinks } from "./navData";
+
+import { NavLink } from "react-router-dom";
 import { AiOutlineMenuUnfold, AiOutlineMenuFold } from "react-icons/ai";
 
 import logowop from '../assests/logowop.png';
@@ -20,8 +23,14 @@ const Navbar = () => {
     }
   };
   
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   return (
-    <div>
+    <div className="sticky z-[1000] top-0">
     <div className="flex flex-wrap sys-app-notCollapsed ">
       <div className="w-full ">
         <div className="pb-0 py-2 px-2 mx-auto ">
@@ -42,7 +51,7 @@ const Navbar = () => {
             <div className="px-2 md:flex gap-x-5 items-center flex-1 text-gray-900 bg-white font-medium capitalize hidden">
               {/* Links */}
               {navLinks?.map(({ title, link }, id) => (
-                <Link key={id} to={`${link}`}>
+                <NavLink key={id} to='/' onClick={() => scrollToSection(link)}>
                   <a
                     id={id}
                     className={`px-2 py-1 flex items-center cursor-pointer hover:bg-gray-200 hover:text-gray-700 text-sm rounded ${
@@ -54,7 +63,7 @@ const Navbar = () => {
                    
                     <span className="mx-1">{title}</span>
                   </a>
-                </Link>
+                </NavLink>
               ))}
             </div>
 
@@ -81,25 +90,25 @@ const Navbar = () => {
         {/* Mobile Navbar */}
         <div
           id="navbar"
-          className={`pt-0 absolute top-2 z-100 mx-auto ${
+          className={`pt-0 absolute top-0 z-100 mx-auto ${
             isMobileNavOpen ? "translate-x-0" : "-translate-x-full"
           } transition-all flex-wrap md:hidden`}
         >
           <div className=" w-80">
-            <div className="w-full py-4 space-y-6 px-2 text-gray-900 bg-white rounded-lg min-h-screen  text-left capitalize font-medium shadow-lg">
+            <div className="w-full py-4 space-y-6 px-2 text-gray-900 bg-gray-900 rounded-lg min-h-screen  text-left capitalize font-medium shadow-lg">
               {/* Logo */}
               <img
-                src="https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png"
+                src={logowop}
                 alt="alt placeholder"
                 className="w-8 h-8 mx-auto mb-5 "
               />
 
               {/* Links */}
               {navLinks?.map(({ title, link }, id) => (
-                <Link key={id} to={`${link}`}>
+                <NavLink key={id} to={`${link}`} onClick={() => scrollToSection(link)}>
                   <a
                     id={id}
-                    className={` flex items-center py-4 cursor-pointer bg-green-300   text-sm  ${
+                    className={` flex items-center py-4 cursor-pointer bg-gray-900   text-sm  ${
                       window.location.pathname === link
                         ? "text-gray-700 font-semibold"
                         : ""
@@ -108,7 +117,7 @@ const Navbar = () => {
                    
                     <span className="mx-auto bg-blue-400 text-white min-w-[130px] px-2 py-2 rounded-xl">{title}</span>
                   </a>
-                </Link>
+                </NavLink>
               ))}
 
               {/* After all nav links if you want any button or link then it will come here */}
@@ -118,7 +127,14 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+
+
+
+   
   </div>
+
+
+
   );
 };
 

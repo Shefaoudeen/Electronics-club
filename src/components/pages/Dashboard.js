@@ -28,6 +28,31 @@ experiment, and excel in the realm of electronics.
         </div>                
     </div>
 </section>
+
+
+<section
+      className=' bg-gray-900'
+      id="#About"
+      
+
+    >
+
+
+      <div className='container  rounded-3xl  mx-auto bg-blue-300'>
+           
+      <h1 className="text-3xl pl-4 font-bold text-pink-600 font-graduate  py-4">Motto</h1>
+        <div className='  px-12 flex flex-col text-center xl:flex-row xl:items-center xl:  xl:gap-x-[60px] xl:pb-0    '>
+          <div className='flex-1 '>
+           
+            <p data-aos='fade-left' data-aos-delay='400'
+              className=' pt-4 italic	pb-10  text-3xl md:px-12 text-center text-black  mx-auto'
+            >
+“inventio et ingenium”
+            </p>   
+          </div>
+        </div> 
+      </div>
+    </section>
 </div>
   )
 }

@@ -3,42 +3,42 @@
 export const navLinks = [
     {
         title: "Dashboard",
-        link: "/",
+        link: "dashboard",
         
     },
     {
         title: "Activities",
-        link: "/activities",
+        link: "activities",
        
     },
     {
         title: "Upcoming Events",
-        link: "/up-events",
+        link: "upcoming",
       
     },
     {
         title: "Former times",
-        link: "/form-times",
+        link: "former",
        
     },
     {
       title: "Snapshots",
-      link: "/snap",
+      link: "snapshots",
      
   },
   {
     title: "Convenor",
-    link: "/convenor",
+    link: "convenor",
    
 },
 {
   title: "Office Bearers",
-  link: "/off-be",
+  link: "offbe",
  
 },
 {
   title: "Contact",
-  link: "/contact",
+  link: "contact",
  
 },
 ]
