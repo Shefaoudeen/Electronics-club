@@ -96,7 +96,7 @@ const Offbe = () => {
       </div> 
 
       
-      <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+      <div class="grid gap-8 mb-6 lg:mb-16 ">
           <div class="items-center  rounded-lg shadow flex bg-gray-800 border-gray-700">
              
              
