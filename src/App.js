@@ -9,7 +9,6 @@ import Upcoming from "./components/pages/Upcoming";
 import Contact from "./components/pages/Contact";
 import Footer from "./components/pages/Footer";
 
-import { NavLink } from "react-router-dom";
 
 
 function App() {

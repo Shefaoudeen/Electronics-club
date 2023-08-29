@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /index.html [L]
+
+# RewriteEngine On
+# RewriteBase /ieee-sb/
+
+# # Exclude existing files and directories from rewrite
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+
+# # Rewrite all other requests to the index.html file
+# RewriteRule ^(.*)$ /ieee-sb/index.html [L]

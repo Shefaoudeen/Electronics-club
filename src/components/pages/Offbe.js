@@ -89,31 +89,62 @@ const Offbe = () => {
 </div></div>
 </div>
 
-    
-
-
-
-
-
-
-
-        <section class="bg-gray-900">
+<section class="bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-screen-md lg:py-10  lg:px-6 ">
       <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-          <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-blue-400 font-rampart-one">Co-ordinators</h2>
+          <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-blue-400 font-rampart-one">Co-ordiantors</h2>
       </div> 
 
       
       <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
           <div class="items-center  rounded-lg shadow flex bg-gray-800 border-gray-700">
              
-                  <img class="w-[40%] rounded-lg sm:rounded-none sm:rounded-l-lg" src={offb2} alt="Bonnie Avatar"/>
+             
+              <div class="p-5 text-xl mx-auto">
+                  
+                  <li class="text-gray-400">Perumal ece-a, 2nd year</li>
+                  <li class="text-gray-400">Nirmal Vardhan ece-a, 2nd year</li>
+                  <li class="text-gray-400">Shaanthapriyan ece-b, 2nd year</li>
+                  <li class="text-gray-400">Rohit Vishal ece-b, 2nd year</li>
+
+              
+              </div>
+          </div> 
+
+
+         
+           
+
+          
+         
+
+      </div>  
+  </div>
+</section>
+
+
+
+
+
+
+
+        <section class="bg-gray-900 text-lg">
+  <div class="py-8 px-4 mx-auto max-w-screen-md lg:py-10  lg:px-6 ">
+      <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+          <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-blue-400 font-rampart-one">Past Bearers</h2>
+      </div> 
+
+      
+      <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+          <div class="items-center  rounded-lg shadow flex bg-gray-800 border-gray-700">
+             
              
               <div class="p-5">
                   <h3 class="text-xl font-bold tracking-tight  text-white">
-                      <a href="#">Perumal </a>
+                      <a href="#">President</a>
                   </h3>
-                  <span class="text-gray-400">Ece-a 2nd year</span>
+                  <li class="text-gray-400">Vishwa @ Santhosh - 2021-2022</li>
+                  <li class="text-gray-400">Navinkumar K - 2022-2023</li>
               
               </div>
           </div> 
@@ -121,13 +152,13 @@ const Offbe = () => {
 
           <div class="items-center  rounded-lg shadow flex bg-gray-800 border-gray-700">
               
-              <img class="w-[40%] rounded-lg sm:rounded-none sm:rounded-l-lg" src={offb3} alt="Bonnie Avatar"/>
               
               <div class="p-5">
                   <h3 class="text-xl font-bold tracking-tight  text-white">
-                      <a href="#">Nirmal Vardhan</a>
+                      <a href="#">General Secretary</a>
                   </h3>
-                  <span class="text-gray-400">Ece-b 2nd year</span>
+                  <li class="text-gray-400">Dheepak G - 2021-2022</li>
+                  <li class="text-gray-400">Mahipal Singh - 2022-2023</li>
                 
               </div>
           </div> 
@@ -135,29 +166,47 @@ const Offbe = () => {
 
           <div class="items-center  rounded-lg shadow flex bg-gray-800 border-gray-700">
               
-              <img class="w-[40%] rounded-lg sm:rounded-none sm:rounded-l-lg" src={offb1} alt="Bonnie Avatar"/>
               
               <div class="p-5">
                   <h3 class="text-xl font-bold tracking-tight  text-white">
-                      <a href="#">Shaanthapriyan</a>
+                      <a href="#">Vice President</a>
                   </h3>
-                  <span class="text-gray-400">Ece-b 2nd year</span>
+                  <li class="text-gray-400">Mahipal Singh - 2021-2022</li>
+                  <li class="text-gray-400">Madesh Varadhan - 2022-2023</li>
                 
               </div>
           </div> 
 
 
           <div class="items-center  rounded-lg shadow flex bg-gray-800 border-gray-700">
-             
-              <img class="w-[40%] rounded-lg sm:rounded-none sm:rounded-l-lg" src={offb4} alt="Bonnie Avatar"/>
-            
               <div class="p-5">
                   <h3 class="text-xl font-bold tracking-tight  text-white">
-                      <a href="#">Rohit Vishal</a>
+                      <a href="#">Joint Secretary</a>
                   </h3>
-                  <span class="text-gray-400">Ece-b 2nd year</span>
-              </div>
+                  <li class="text-gray-400">Navinkumar K  - 2021-2022</li>
+                  <li class="text-gray-400">Sangesh - 2022-2023</li>
+              </div>   
           </div>  
+          <div class="items-center  rounded-lg shadow flex bg-gray-800 border-gray-700">
+              <div class="p-5">
+                  <h3 class="text-xl font-bold tracking-tight  text-white">
+                      <a href="#">Treasurer</a>
+                  </h3>
+                  <li class="text-gray-400">Shriram - 2021-2022</li>
+                  <li class="text-gray-400">Badrinath - 2022-2023</li>
+              </div>   
+          </div>  
+          <div class="items-center  rounded-lg shadow flex bg-gray-800 border-gray-700">
+              <div class="p-5">
+                  <h3 class="text-xl font-bold tracking-tight  text-white">
+                      <a href="#">Joint Treasurer</a>
+                  </h3>
+                  <li class="text-gray-400">Badrinath - 2021-2022</li>
+                  <li class="text-gray-400">Moginder - 2022-2023</li>
+
+              </div>   
+          </div>  
+
       </div>  
   </div>
 </section>

@@ -51,7 +51,7 @@ const Navbar = () => {
             <div className="px-2 md:flex gap-x-5 items-center flex-1 text-gray-900 bg-white font-medium capitalize hidden">
               {/* Links */}
               {navLinks?.map(({ title, link }, id) => (
-                <NavLink key={id} to='/' onClick={() => scrollToSection(link)}>
+                <NavLink key={id}  onClick={() => scrollToSection(link)}>
                   <a
                     id={id}
                     className={`px-2 py-1 flex items-center cursor-pointer hover:bg-gray-200 hover:text-gray-700 text-sm rounded ${
@@ -105,7 +105,7 @@ const Navbar = () => {
 
               {/* Links */}
               {navLinks?.map(({ title, link }, id) => (
-                <NavLink key={id} to={`${link}`} onClick={() => scrollToSection(link)}>
+                <NavLink key={id}  onClick={() => scrollToSection(link)}>
                   <a
                     id={id}
                     className={` flex items-center py-4 cursor-pointer bg-gray-900   text-sm  ${
