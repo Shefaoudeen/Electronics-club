@@ -38,7 +38,7 @@ experiment, and excel in the realm of electronics.
     >
 
 
-      <div className='container  rounded-3xl  mx-auto bg-blue-300'>
+      <div className='w-[80%] mx-auto  rounded-3xl  bg-blue-300'>
            
       <h1 className="text-3xl pl-4 font-bold text-pink-600 font-graduate  py-4">Motto</h1>
         <div className='  px-12 flex flex-col text-center xl:flex-row xl:items-center xl:  xl:gap-x-[60px] xl:pb-0    '>
